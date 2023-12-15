@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Overview</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">  
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            padding: 1rem;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #scrollTopBtn {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px;
+            background-color: #ffffff;
+            color: aliceblue;
+            border: solid black 1px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none; 
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+            line-height: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <h1>Copy/Paste Application: Project Overview</h1>
+    
+    <h3>Table of Contents</h3>
+    <ul>
+        <li><a href="#project-summary">Project Summary</a></li>
+        <li><a href="#source-code">Source Code</a></li>
+        <li><a href="#technologies-used">Technologies Used</a></li>
+        <li><a href="#functionality-features">Functionality and Features</a></li>
+        <li><a href="#challenges-solutions">Challenges and Solutions</a></li>
+        <li><a href="#future-enhancements">Future Enhancements</a></li>
+        <li><a href="#contact-info">Contact Information</a></li>
+    </ul>
+    <hr/>
+
+    <section id="project-summary">
+        <h3>Project Summary</h3>
+        <p>The Copy/Paste application was created to make it easier to share text and files between devices. Typically one would email themselves something between personal devices. But in situations where you might be working with a remote system it's now possible to send text content or a file instead of typing it manually. This system works with any device with a browser and internet access.</p>
+        <hr/>
+    </section>
+
+    <section id="source-code">
+        <h3>Source Code</h3>
+        <p>You can access all the related code and deployment instructions on <a href="https://www.github.com" >Github</a></p>
+        <hr/>
+    </section>
+
+    <section id="technologies-used">
+        <h3>Technologies Used</h3>
+        <ul>
+            <li>Languages:
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </li>
+            <li>Frameworks/Libraries:
+                <ul>
+                    <li>Express.js</li>
+                    <li>Firebase</li>
+                    <li>dotenv</li>
+                </ul>
+            </li>
+            <li>Web APIs:
+                <ul>
+                    <li>WebRTC</li>
+                    <li>sessionStorage</li>
+                </ul>
+            </li>
+            <li>Signaling Server:
+                <ul>
+                    <li>Firestore Database</li>
+                </ul>
+            </li>
+            <li>Webserver:
+                <ul>
+                    <li>Nginx</li>
+                </ul>
+            </li>
+            <li>Hosting:
+                <ul>
+                    <li>Digital Ocean Droplets</li>
+                </ul>
+            </li>
+            <li>SSL:
+                <ul>
+                    <li>CloudFlare Certificates</li>
+                </ul>
+            </li>
+            <li>Security Proxy:
+                <ul>
+                    <li>CloudFlare</li>
+                </ul>
+            </li>
+            <li>Package Manager:
+                <ul>
+                    <li>npm</li>
+                </ul>
+            </li>
+            <li>Version Control:
+                <ul>
+                    <li>Git (GitHub)</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <hr/>
+    </section>
+
+    <section id="functionality-features">
+        <h3>Functionality and Features</h3>
+        <ul>
+            <li><strong>Real-time Communication Establishment:</strong> Utilizes WebRTC for creating real-time communication channels between devices. Users can start a session and receive a unique session ID.</li>
+            <li><strong>Session Joining Capability:</strong> Allows a single user to join an existing session using the session ID, Allowing two users to connect and share data.</li>
+            <li><strong>Text and File Transfer:</strong> Enables users to send text messages and files within a session through dedicated buttons and modal forms.</li>
+            <li><strong>Firebase integration as a Signaling Server:</strong> Manages WebRTC signaling data using Firebase, with Firestore Database temporarily storing session details.</li>
+            <li><strong>Secure WebRTC Data Channels:</strong> Ensures the privacy and security of data transferred between connected peers.</li>
+            <li><strong>User Interface Elements:</strong> Incorporates session management, content display, and interactive modal forms for user actions.</li>
+            <li><strong>Dynamic Content Handling:</strong> JavaScript functions dynamically manage session IDs, data transfer, and user interactions.</li>
+            <li><strong>Accessibility and Responsiveness:</strong> Designed for usability across various devices and screen sizes.</li>
+        </ul>
+        <hr/>
+    </section>
+
+    <section id="challenges-solutions">
+        <h3>Challenges and Solutions</h3>
+        <p>I ran into a few roadblocks while working with the WebRTC API and Firebase Library, mainly because I was new to these tools. Also, using Vanilla JavaScript added some extra challenges, especially since it doesn't have built-in global state management. But after some solid debugging, I figured it out. I used sessionStorage to keep track of variables, set up polling to check for updates, and organized the client-side JavaScript into a single, large block of code. This setup made it easier to manage global values throughout the app.<br/></p>
+        <p>Here are some amazing resources:</p>
+        <ul>
+            <li><a href="https://fireship.io/lessons/webrtc-firebase-video-chat/">Fireship.io</a></li>
+            <li><a href="https://webrtc.org/">webrtc.org</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API#interoperability">WebRTC API</a></li>
+            <li><a href="https://firebase.google.com/docs/reference/js/firestore_.md#@firebase/firestore">Firebase API</a></li>
+        </ul>
+        <hr/>
+    </section>
+
+    <section id="future-enhancements">
+        <h3>Future Enhancements</h3>
+        <p>At the moment Copy/Paste is a proof-of-concept.</p>
+        <p>There are no enhancements planned at this time.</p>
+        <hr/>
+    </section>
+
+    <section id="contact-info">
+        <h3>Contact Information</h3>
+        <p>Website: <a href="https://www.cornidez.com">Cornidez.com</a></p>
+        <p>Email: <a href="mailto:rodrigo@cornidez.com">Rodrigo@Cornidez.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/rodrigo-cornidez-95b995204/">Rodrigo Cornidez</a></p>
+        <hr/>
+    </section>
+    <button id="scrollTopBtn" style="display: none;">🔝</button>
+
+    <script>
+        window.onscroll = function() {
+            scrollFunction();
+        };
+    
+        function scrollFunction() {
+            const scrollTopBtn = document.getElementById("scrollTopBtn");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                scrollTopBtn.style.display = "flex";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        }
+    
+        document.getElementById("scrollTopBtn").onclick = function() {
+            window.scrollTo({top: 0, behavior: 'smooth'}); // Smooth scroll to top
+        };
+    </script>
+    
+
+</body>
+
+</html>

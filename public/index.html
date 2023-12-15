@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+  
+    <link rel="stylesheet" href="index.css">
+    <title>Copy/Paste 📋</title>
+</head>
+<body>
+    <!-- Title and Description -->
+    <div id="title-description">
+        <h1>Copy/Paste 📋</h1>
+        <p>A temporary clipboard to seamlessly share text and files between devices.</p>
+        <p><a href="quickstart.html" target="_blank">Quickstart guide</a></p>
+        <p><a href="overview.html" target="_blank">Project overview</a></p>
+    </div>
+    
+    <!-- Show Session Id when created or set -->
+    <div id="callInput"></div>
+
+    <!-- Create/Join Session buttons - Once data channel created show send test/file buttons -->
+    <div id="buttons">
+        <button id="createSession">Create Session</button>
+        <button id="joinSession">Join Session</button>
+        <button id="sendText">Send Text</button>
+        <button id="sendFile">Send File</button>
+    </div>
+
+    
+    <!-- Container for session text + files that are sent between browsers -->
+    <div id="chat-content"></div>
+
+    <!-- Modal Form -->
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2 id="formTitle">Form Title</h2>
+            </div>
+            <div class="modal-body" id="formBody">
+                <!-- Form content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer elements -->
+    <div class="logo-container">
+        <p>Powered by</p>
+        <a href="https://webrtc.org/" target="_blank">
+          <img id="webrtc-logo" src="/WebRTC_Logo.svg" alt="WebRTC Logo" />
+        </a>
+    </div>
+    <p><a href="privacy.html" target="_blank">Privacy Policy</a></p>
+
+
+    <script src="./index.js" type="module"></script>
+</body>
+</html>
