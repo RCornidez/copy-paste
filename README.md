@@ -13,7 +13,7 @@
     <li>Run: `npm install` within the root of directory to install dependencies.</li>
     <li>Setup a <a href="#firestore">google firestore per the notes below</a>. This will be your signaling server that assists with making the WebRTC connections.</li>
     <li>Create a <a href="#env">.env file per the notes below.</a></li>
-    <li>Configure url parameter within /public/index.js to match the IP Address and port where you'll be hosting the application.<br/>127.0.0.1 - localhost/local machine.<br/>0.0.0.0 - all of your network interfaces (including localhost).<br/>Public IP || Domain - if you're serving the application publicly.</li>
+    <li>Configure url parameter within /public/index.js to match the IP Address and port where you'll be hosting the application.<br/>127.0.0.1 - localhost/local machine.<br/>0.0.0.0 - all of your network interfaces (including localhost).</li>
     <li>Run: `npm run dev` for testing</li>
     <li>Access via the IP Address and Port set within the .env file - <a href="http://127.0.0.1:4000/" target="_blank">http://127.0.0.1:4000/</a></li>
     <li>Deploying will require you to containerize the application, create a service, or use a service library like pm2.</li>
