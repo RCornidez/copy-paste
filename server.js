@@ -13,7 +13,7 @@ import { router as firestore } from "./components/firestore.js";
 const app = express();
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
-app.use(cors({ origin: "https://color.cornidez.com" }));  // Set allowed URLs || "*" for no CORS restrictions
+app.use(cors({ origin: "*" }));  // Set allowed URLs || "*" for no CORS restrictions
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
 
