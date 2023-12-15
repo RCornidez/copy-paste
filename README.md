@@ -9,7 +9,7 @@
 
 <h3>How-to-run:</h3>
 <ol>
-    <li>Download <a href="https://www.github.com/">Github</a> repository.</li>
+    <li>Download <a href="https://github.com/RCornidez/copy-paste">Github</a> repository.</li>
     <li>Run: `npm install` within the root of directory to install dependencies.</li>
     <li>Setup a <a href="#firestore">google firestore per the notes below</a>. This will be your signaling server that assists with making the WebRTC connections.</li>
     <li>Create a <a href="#env">.env file per the notes below.</a></li>
