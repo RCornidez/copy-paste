@@ -1,10 +1,10 @@
 <h1>Copy/Paste 📋</h1>
 
 <p>A WebRTC powered temporary clipboard to seamlessly share text and files between devices.</p>
-<p><a href="https://color.cornidez.com/" target="_blank">Demo</a></p>
-<p><a href="https://color.cornidez.com/quickstart.html" target="_blank">Quickstart guide</a></p>
-<p><a href="https://color.cornidez.com/overview.html" target="_blank">Project overview</a></p>
-<p><a href="https://color.cornidez.com/privacy.html" target="_blank">Privacy Policy</a></p>
+<p><a href="https://copy.cornidez.com/v1" target="_blank">Demo</a></p>
+<p><a href="https://copy.cornidez.com/public/quickstart.html" target="_blank">Quickstart guide</a></p>
+<p><a href="https://copy.cornidez.com/public/overview.html" target="_blank">Project overview</a></p>
+<p><a href="https://copy.cornidez.com/public/privacy.html" target="_blank">Privacy Policy</a></p>
 
 
 <h3>How-to-run:</h3>
